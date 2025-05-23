@@ -53,7 +53,16 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.SpriteState
-  methodsToPreserve: []
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: GoScene
+    methodName: Settings
+  - assembly: Assembly-CSharp
+    fullTypeName: GoScene
+    methodName: StartGame
+  - assembly: Assembly-CSharp
+    fullTypeName: GoScene
+    methodName: StartGame
   sceneClasses:
     Assets/Scenes/MainMenu.unity:
     - Class: 1
@@ -150,6 +159,61 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    Assets/Scenes/Settings.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16144}
+    - Class: 114
+      Script: {instanceID: 17150}
+    - Class: 114
+      Script: {instanceID: 17356}
+    - Class: 114
+      Script: {instanceID: 17644}
+    - Class: 114
+      Script: {instanceID: 17674}
+    - Class: 114
+      Script: {instanceID: 19572}
+    - Class: 114
+      Script: {instanceID: 20120}
+    - Class: 114
+      Script: {instanceID: 20270}
+    - Class: 114
+      Script: {instanceID: 20588}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -936,5 +1000,6 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/Settings.unity
   playerPath: C:/Users/kaise/Documents/GitHub/GesturaSgSL/Chao Yu Dong Kaiser/My
     project/A Output/My project.exe

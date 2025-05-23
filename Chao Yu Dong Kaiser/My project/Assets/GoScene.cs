@@ -20,4 +20,12 @@ public class GoScene : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+    public void Settings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+    public void BackToMain()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

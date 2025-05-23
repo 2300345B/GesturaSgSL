@@ -26,8 +26,8 @@ m_EmbeddedPackageManifests:
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 638835648187002759
-      m_Hash: 1724004672
+        ticks: 638835348130000000
+      m_Hash: 3455946988
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/kaise/Documents/GitHub/GesturaSgSL/Chao Yu Dong Kaiser/My
@@ -2927,7 +2927,7 @@ m_ResolvedPackages:
     Yu Dong Kaiser\My project\Packages\com.merry-yellow.code-assist
   testable: 1
   isDirectDependency: 1
-  version: 1.4.13
+  version: 1.4.15
   source: 3
   resolvedPath: C:\Users\kaise\Documents\GitHub\GesturaSgSL\Chao Yu Dong Kaiser\My
     project\Packages\com.merry-yellow.code-assist
