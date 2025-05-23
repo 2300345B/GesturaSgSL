@@ -16,7 +16,7 @@ public class GoScene : MonoBehaviour
     {
         
     }
-    void StartGame()
+    public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
     }
