@@ -1,2 +1,4 @@
-/Chao Yu Dong Kaiser/My project/Temp
-Chao Yu Dong Kaiser/My project/.vs/My project/FileContentIndex/50f3bbee-e5ab-4e6e-9065-b7b87189870c.vsidx
+/Chao Yu Dong Kaiser/My project/Library/
+*.csproj
+*.sln
+/Chao Yu Dong Kaiser/My project/UserSettings
