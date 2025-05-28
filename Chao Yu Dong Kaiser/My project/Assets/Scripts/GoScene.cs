@@ -28,4 +28,8 @@ public class GoScene : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+    public void GoAbout()
+    {
+        SceneManager.LoadScene("AboutScene");
+    }
 }
