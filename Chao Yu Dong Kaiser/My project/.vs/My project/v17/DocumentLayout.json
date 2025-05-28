@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\kaise\\documents\\github\\gesturasgsl\\chao yu dong kaiser\\my project\\assets\\webcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\webcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\kaise\\documents\\github\\gesturasgsl\\chao yu dong kaiser\\my project\\assets\\goscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\goscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "WebCam.cs",
+              "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\WebCam.cs",
+              "RelativeDocumentMoniker": "Assets\\WebCam.cs",
+              "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\WebCam.cs",
+              "RelativeToolTip": "Assets\\WebCam.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T02:55:41.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GoScene.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\GoScene.cs",
               "RelativeDocumentMoniker": "Assets\\GoScene.cs",
