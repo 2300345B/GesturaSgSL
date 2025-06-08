@@ -18,7 +18,7 @@ public class GoScene : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("GameScene");
     }
     public void Settings()
     {
@@ -31,5 +31,9 @@ public class GoScene : MonoBehaviour
     public void GoAbout()
     {
         SceneManager.LoadScene("AboutScene");
+    }
+    public void Repeat()
+    {
+        
     }
 }
