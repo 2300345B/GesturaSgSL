@@ -1,0 +1,12 @@
+yes
+no
+me
+you
+hello
+hi
+good
+ok
+sorry
+i love you
+thank you
+welcome
