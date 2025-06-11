@@ -1,0 +1,14 @@
+classes.txt
+------------
+
+0 yes
+1 no
+2 hello
+3 hi
+4 how are you
+5 i am good
+6 i am ok
+7 sorry
+8 i love you
+9 thank you
+10 welcome

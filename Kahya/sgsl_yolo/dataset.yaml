@@ -1,0 +1,5 @@
+train: C:\Users\kahya\sgsl_yolo\dataset\images\train
+val: C:\Users\kahya\sgsl_yolo\dataset\images\val
+
+nc: 11
+names: ['yes', 'no', 'hello', 'hi', 'how_are_you', 'i_am_good', 'i_am_ok', 'sorry', 'i_love_you', 'thank_you', 'welcome']
