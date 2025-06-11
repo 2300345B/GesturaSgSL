@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GoScene.cs" />
     <Compile Include="Assets\Scripts\WebCam.cs" />
+    <Compile Include="Assets\GestureControll.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
