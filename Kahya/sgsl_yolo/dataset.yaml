@@ -1,5 +1,5 @@
-train: C:/Users/Admin/Documents/GitHub/GesturaSgSL/Kahya/sgsl_yolo/dataset/images/train
-val: C:/Users/Admin/Documents/GitHub/GesturaSgSL/Kahya/sgsl_yolo/dataset/images/val
+train: C:\Users\1MP25399\Documents\GitHub\GesturaSgSL\Kahya\sgsl_yolo\dataset\images\train
+val: C:\Users\1MP25399\Documents\GitHub\GesturaSgSL\Kahya\sgsl_yolo\dataset\images\val
 
 nc: 12
 names: ['yes', 'no', 'me', 'you', 'hello', 'hi', 'good', 'ok', 'sorry', 'i love you', 'thank you', 'welcome']
