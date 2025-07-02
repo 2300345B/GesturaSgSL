@@ -79,6 +79,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T02:48:30.66Z"
+<<<<<<< Updated upstream
             },
             {
               "$type": "Document",
@@ -95,6 +96,24 @@
             },
             {
               "$type": "Document",
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReplayAnim.cs",
+              "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ReplayAnim.cs",
+              "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs*",
+              "RelativeToolTip": "Assets\\Scripts\\ReplayAnim.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T01:34:27.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+>>>>>>> Stashed changes
               "DocumentIndex": 4,
               "Title": "GoScene.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\GoScene.cs",
