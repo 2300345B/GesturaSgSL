@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 710c9348112c20c44a5f94da51c47c42
+guid: 87e14e6aed5021e48a939deb673ee4c2
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -36,37 +36,8 @@ ModelImporter:
       name: Armature|Armature|mixamo.com|Layer0_Armature
       takeName: Armature|Armature|mixamo.com|Layer0_Armature
       internalID: 9105409748122000033
-      firstFrame: 2
+      firstFrame: 0
       lastFrame: 2
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 0
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 1
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|kaiser-hi.mp4_Armature
-      takeName: Armature|kaiser-hi.mp4_Armature
-      internalID: -7130652799149555934
-      firstFrame: 5
-      lastFrame: 145
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -82,6 +53,35 @@ ModelImporter:
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|kaiser-hi.mp4_Armature
+      takeName: Armature|kaiser-hi.mp4_Armature
+      internalID: -7130652799149555934
+      firstFrame: 0
+      lastFrame: 145
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
