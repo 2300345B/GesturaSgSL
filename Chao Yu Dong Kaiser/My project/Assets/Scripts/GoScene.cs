@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GoScene : MonoBehaviour
 {
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +36,15 @@ public class GoScene : MonoBehaviour
     public void Repeat()
     {
         
+    }
+
+    public void PlayAnimation1()
+    {
+        animator.SetTrigger("Hi");
+    }
+    public void PlayAnimation2()
+    {
+        animator.SetTrigger("HowAreYou");
+
     }
 }
