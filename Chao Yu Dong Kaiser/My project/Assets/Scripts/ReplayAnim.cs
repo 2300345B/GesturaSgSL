@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ReplayAnim : MonoBehaviour
 {
-    public Animator animator;      // Reference to the Animator
-    public string Hi;   // Name of the animation state
+    public Animator animator;     
+    public string Hi; 
 
     public void Replay()
     {
-        animator.Play(Hi, -1, 0f);  // Replays from start
+        animator.Play(Hi, -1, 0f); 
     }
 }
