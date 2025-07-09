@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\ReplayAnim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\kaise\\documents\\github\\gesturasgsl\\chao yu dong kaiser\\my project\\assets\\scripts\\replayanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\replayanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\kaise\\documents\\github\\gesturasgsl\\chao yu dong kaiser\\my project\\assets\\gesturecontroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\assets\\gesturecontroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\gesturecontroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -53,9 +53,8 @@
               "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\GestureControll.cs",
               "RelativeToolTip": "Assets\\GestureControll.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T01:47:24.76Z",
-              "EditorCaption": ""
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD9SURBVDhP7Y\u002B9asJgGIWfRD6LEPACCgWhQeykEKSjY8gFxD8QHMS1t\u002BFgcXFz6FakSG/AG9BOksUM0qHtUhqKkEmQ16H1Q6Q0uPtMB87hvOeFM5rF20JaTy0pDApi39tSH9dl70XrSPKDvBxrAAMgeA\u002BkNqlRvizTLrbJXmRZfi2plqpGtI7EGTn7vCadShPehQYAneeOeA\u002BexHGsmw/5b4EJMP\u002BY4167WJb103gCJoAyFcpUxx78XnRGDpvthlw/p/XhCprjpviP/p/zSXjBAJi9zqQxaeDaLv6Nj0opgs\u002BA7m038SUdmIZTGb4MWX2vyKgMlasKPa\u002BXWHAGdt/Acu2QGdhLAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-06-13T01:47:24.76Z"
             },
             {
               "$type": "Document",
@@ -79,7 +78,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T02:48:30.66Z"
-<<<<<<< Updated upstream
             },
             {
               "$type": "Document",
@@ -96,24 +94,6 @@
             },
             {
               "$type": "Document",
-=======
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReplayAnim.cs",
-              "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ReplayAnim.cs",
-              "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\ReplayAnim.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T01:34:27.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
->>>>>>> Stashed changes
               "DocumentIndex": 4,
               "Title": "GoScene.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\GoScene.cs",

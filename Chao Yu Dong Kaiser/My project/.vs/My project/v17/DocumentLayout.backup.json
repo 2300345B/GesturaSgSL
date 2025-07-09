@@ -1,19 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Zhou Hong\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\",
+  "WorkspaceRootPath": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\Zhou Hong\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\assets\\scripts\\webcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\ReplayAnim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\kaise\\documents\\github\\gesturasgsl\\chao yu dong kaiser\\my project\\assets\\scripts\\replayanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\replayanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-=======
->>>>>>> Stashed changes
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\kaise\\documents\\github\\gesturasgsl\\chao yu dong kaiser\\my project\\assets\\gesturecontroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\assets\\gesturecontroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\gesturecontroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -22,20 +16,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\assets\\scripts\\webcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\webcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\Zhou Hong\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\assets\\scripts\\goscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\Zhou Hong\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\ReplayAnim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-=======
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\webcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,21 +23,12 @@
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
->>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\WebCam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\WebCam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\GoScene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\GoScene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\ReplayAnim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -71,76 +42,38 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 0,
-<<<<<<< Updated upstream
-=======
               "DocumentIndex": 1,
-=======
->>>>>>> Stashed changes
               "Title": "GestureControll.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\GestureControll.cs",
               "RelativeDocumentMoniker": "Assets\\GestureControll.cs",
               "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\GestureControll.cs",
               "RelativeToolTip": "Assets\\GestureControll.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-<<<<<<< Updated upstream
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T01:47:24.76Z",
-              "EditorCaption": ""
-=======
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T01:47:24.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReplayAnim.cs",
-              "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\ReplayAnim.cs",
-              "RelativeDocumentMoniker": "Assets\\ReplayAnim.cs",
-              "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\ReplayAnim.cs",
-              "RelativeToolTip": "Assets\\ReplayAnim.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T02:58:34.898Z"
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD9SURBVDhP7Y\u002B9asJgGIWfRD6LEPACCgWhQeykEKSjY8gFxD8QHMS1t\u002BFgcXFz6FakSG/AG9BOksUM0qHtUhqKkEmQ16H1Q6Q0uPtMB87hvOeFM5rF20JaTy0pDApi39tSH9dl70XrSPKDvBxrAAMgeA\u002BkNqlRvizTLrbJXmRZfi2plqpGtI7EGTn7vCadShPehQYAneeOeA\u002BexHGsmw/5b4EJMP\u002BY4167WJb103gCJoAyFcpUxx78XnRGDpvthlw/p/XhCprjpviP/p/zSXjBAJi9zqQxaeDaLv6Nj0opgs\u002BA7m038SUdmIZTGb4MWX2vyKgMlasKPa\u002BXWHAGdt/Acu2QGdhLAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-06-13T01:47:24.76Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "WebCam.cs",
-              "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\WebCam.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\WebCam.cs",
-              "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\WebCam.cs",
-              "RelativeToolTip": "Assets\\Scripts\\WebCam.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T02:48:30.66Z"
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "ReplayAnim.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\ReplayAnim.cs",
               "RelativeDocumentMoniker": "Assets\\ReplayAnim.cs",
               "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\ReplayAnim.cs",
               "RelativeToolTip": "Assets\\ReplayAnim.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< Updated upstream
               "WhenOpened": "2025-06-11T02:58:34.898Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
->>>>>>> Stashed changes
               "Title": "WebCam.cs",
-              "DocumentMoniker": "C:\\Users\\Zhou Hong\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\WebCam.cs",
+              "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\WebCam.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WebCam.cs",
-              "ToolTip": "C:\\Users\\Zhou Hong\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\WebCam.cs",
+              "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\WebCam.cs",
               "RelativeToolTip": "Assets\\Scripts\\WebCam.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -152,55 +85,16 @@
               "Title": "ReplayAnim.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ReplayAnim.cs",
-              "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\ReplayAnim.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T01:34:27.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 2,
-              "Title": "ReplayAnim.cs",
-              "DocumentMoniker": "C:\\Users\\Zhou Hong\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ReplayAnim.cs",
-              "ToolTip": "C:\\Users\\Zhou Hong\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs",
+              "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ReplayAnim.cs",
               "RelativeToolTip": "Assets\\Scripts\\ReplayAnim.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T01:34:27.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-=======
               "DocumentIndex": 4,
->>>>>>> Stashed changes
-              "Title": "GoScene.cs",
-              "DocumentMoniker": "C:\\Users\\Zhou Hong\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\GoScene.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GoScene.cs",
-              "ToolTip": "C:\\Users\\Zhou Hong\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\GoScene.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GoScene.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAkwCAAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< Updated upstream
-              "WhenOpened": "2025-05-28T07:27:03.893Z",
-              "EditorCaption": ""
-=======
-              "WhenOpened": "2025-05-28T07:27:03.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-=======
-              "WhenOpened": "2025-06-11T01:34:27.769Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "GoScene.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\GoScene.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GoScene.cs",
@@ -212,8 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
->>>>>>> Stashed changes
+              "DocumentIndex": 5,
               "Title": "WebCam.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\WebCam.cs",
               "RelativeDocumentMoniker": "Assets\\WebCam.cs",
@@ -224,11 +117,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 6,
-=======
-              "DocumentIndex": 5,
->>>>>>> Stashed changes
               "Title": "GoScene.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\GoScene.cs",
               "RelativeDocumentMoniker": "Assets\\GoScene.cs",
@@ -237,7 +126,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T02:39:57.232Z"
->>>>>>> Stashed changes
             }
           ]
         }
