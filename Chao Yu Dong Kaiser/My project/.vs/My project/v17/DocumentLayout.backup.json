@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\kaise\\documents\\github\\gesturasgsl\\chao yu dong kaiser\\my project\\assets\\scripts\\modelanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\modelanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\assets\\scripts\\selectavatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\selectavatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.22\\Editor\\VisualStudioEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ide.visualstudio@2.0.22\\Editor\\VisualStudioEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\kaise\\documents\\github\\gesturasgsl\\chao yu dong kaiser\\my project\\assets\\scripts\\selectavatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\selectavatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\assets\\scripts\\goscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\assets\\scripts\\modelanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\modelanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\assets\\paneltransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "VisualStudioEditor.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.22\\Editor\\VisualStudioEditor.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ide.visualstudio@2.0.22\\Editor\\VisualStudioEditor.cs",
@@ -85,10 +85,9 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\SelectAvatar.cs",
               "ToolTip": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\SelectAvatar.cs",
               "RelativeToolTip": "Assets\\Scripts\\SelectAvatar.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBwAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T07:16:55.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T07:16:55.242Z"
             },
             {
               "$type": "Document",
@@ -104,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ModelAnim.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\ModelAnim.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ModelAnim.cs",
@@ -112,7 +111,8 @@
               "RelativeToolTip": "Assets\\Scripts\\ModelAnim.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T07:29:50.825Z"
+              "WhenOpened": "2025-07-09T07:29:50.825Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -151,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GoScene.cs",
               "DocumentMoniker": "C:\\Users\\kaise\\Documents\\GitHub\\GesturaSgSL\\Chao Yu Dong Kaiser\\My project\\Assets\\Scripts\\GoScene.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GoScene.cs",
