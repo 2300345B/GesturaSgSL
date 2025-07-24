@@ -45,3 +45,8 @@ env/
 .DS_Store
 Thumbs.db
 /Chao Yu Dong Kaiser/My project/UserSettings/Layouts
+/Chao Yu Dong Kaiser/My project/UserSettings
+/Chao Yu Dong Kaiser/My project/Logs
+*.sln
+/Chao Yu Dong Kaiser/My project/.vs/My project/v17
+/Chao Yu Dong Kaiser/My project/obj/Debug
