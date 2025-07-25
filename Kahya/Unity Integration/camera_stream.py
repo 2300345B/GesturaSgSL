@@ -1,63 +1,92 @@
+# camera_stream.py
+
 import torch
 import cv2
 import threading
+import mediapipe as mp
 
-# Load YOLOv5 model
-model = torch.hub.load('ultralytics/yolov5', 'custom',
-                       path=r"C:\Users\Admin\Documents\GitHub\GesturaSgSL\Kahya\sgsl_yolo\yolov5\runs\train\sgsl_model_improved v3\weights\best.pt",
-                       force_reload=True)
-model.eval()
 
-# Open webcam
-cap = cv2.VideoCapture(0)
+class GestureDetector:
+    def __init__(self, model_path, camera_index=0):
+        # Load your YOLOv5 model
+        self.model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, force_reload=True)
+        self.model.eval()
 
-if not cap.isOpened():
-    print("❌ ERROR: Cannot open webcam. Try changing the index (e.g., to 1 or 2).")
-    exit()
+        # MediaPipe for hand detection
+        self.mp_hands = mp.solutions.hands
+        self.hands = self.mp_hands.Hands(
+            static_image_mode=False,
+            max_num_hands=1,
+            min_detection_confidence=0.5,
+            min_tracking_confidence=0.5
+        )
+        self.mp_draw = mp.solutions.drawing_utils
 
-# Shared variables
-current_gesture = 'None'
-current_confidence = 0.0
+        self.cap = cv2.VideoCapture(camera_index)
+        if not self.cap.isOpened():
+            raise Exception(f"❌ Cannot open webcam at index {camera_index}.")
 
-# Detection and display loop
-def detect_loop():
-    global current_gesture, current_confidence
-    while True:
-        ret, frame = cap.read()
-        if not ret:
-            print("❌ ERROR: Failed to read frame.")
-            continue
+        self.current_gesture = 'None'
+        self.current_confidence = 0.0
+        self._running = False
+        self._thread = None
 
-        # YOLOv5 inference
-        results = model(frame)
+    def _detect_loop(self):
+        while self._running:
+            ret, frame = self.cap.read()
+            if not ret:
+                continue
 
-        # Extract labels and confidence
-        df = results.pandas().xyxy[0]
+            # Flip and convert to RGB
+            frame = cv2.flip(frame, 1)
+            rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            results = self.hands.process(rgb)
 
-        if len(df) > 0:
-            top_result = df.iloc[0]
-            current_gesture = top_result['name']
-            current_confidence = float(top_result['confidence'])
-        else:
-            current_gesture = 'None'
-            current_confidence = 0.0
+            # Hand check (using MediaPipe)
+            hand_detected = bool(results.multi_hand_landmarks)
 
-        print(f"Gesture: {current_gesture}, Confidence: {current_confidence:.2f}")
+            if hand_detected:
+                # Run your custom YOLOv5 model
+                yolo_results = self.model(frame)
+                df = yolo_results.pandas().xyxy[0]
 
-        # Draw bounding boxes on the image
-        annotated_frame = results.render()[0]  # returns list of ndarray
+                if len(df) > 0:
+                    top_result = df.iloc[0]
+                    self.current_gesture = top_result['name']
+                    self.current_confidence = float(top_result['confidence'])
+                else:
+                    self.current_gesture = 'Hand Detected - No Match'
+                    self.current_confidence = 0.0
 
-        # Display the image
-        cv2.imshow("Gesture Detection", annotated_frame)
+                # Optional: draw landmarks
+                for landmarks in results.multi_hand_landmarks:
+                    self.mp_draw.draw_landmarks(
+                        frame, landmarks, self.mp_hands.HAND_CONNECTIONS
+                    )
 
-        # Press Q to quit (in debug)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
+                # Optional: draw YOLO box
+                annotated = yolo_results.render()[0]
+            else:
+                self.current_gesture = 'No Hand Detected'
+                self.current_confidence = 0.0
+                annotated = frame
 
-    cap.release()
-    cv2.destroyAllWindows()
+            # Display the annotated frame
+            cv2.imshow("Gesture Detection", annotated)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                self.stop()
 
-# Start thread
-t = threading.Thread(target=detect_loop)
-t.daemon = True
-t.start()
+        self.cap.release()
+        cv2.destroyAllWindows()
+
+    def start(self):
+        if not self._running:
+            self._running = True
+            self._thread = threading.Thread(target=self._detect_loop, daemon=True)
+            self._thread.start()
+
+    def stop(self):
+        self._running = False
+
+    def get_gesture(self):
+        return self.current_gesture, round(self.current_confidence, 2)
