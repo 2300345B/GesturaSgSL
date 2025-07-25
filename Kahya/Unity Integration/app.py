@@ -7,7 +7,7 @@ import threading
 app = Flask(__name__)
 
 # Update with your actual model path
-MODEL_PATH = r'C:\Users\Admin\Documents\GitHub\GesturaSgSL\Kahya\sgsl_yolo\AI Model\sgsl_model_v2\weights\best.pt'
+MODEL_PATH = r'C:\Users\Admin\Documents\GitHub\GesturaSgSL\Kahya\sgsl_yolo\AI Models\sgsl_model_v2\weights\best.pt'
 
 gesture_detector = GestureDetector(model_path=MODEL_PATH)
 
