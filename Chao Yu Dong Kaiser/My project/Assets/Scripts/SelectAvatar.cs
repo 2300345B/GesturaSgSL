@@ -35,6 +35,8 @@ public class SelectAvatar : MonoBehaviour
 
     public void AvatarSelected()
     {
+        if (Camera.main) Debug.Log("aaaaaaaaaa");
+        if (transform.GetComponentInChildren<Camera>()) Debug.Log("ccccccccccc");
         Camera.main.transform.position = transform.GetComponentInChildren<Camera>().transform.position;
         Camera.main.transform.rotation = transform.GetComponentInChildren<Camera>().transform.rotation;
         Animator animator = transform.GetComponent<Animator>();
