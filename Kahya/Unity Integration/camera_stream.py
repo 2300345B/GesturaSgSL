@@ -1,9 +1,10 @@
 # camera_stream.py
-
+import os
 import torch
 import cv2
 import threading
 import mediapipe as mp
+
 
 
 class GestureDetector:
@@ -72,7 +73,8 @@ class GestureDetector:
                 annotated = frame
 
             # Display the annotated frame
-            cv2.imshow("Gesture Detection", annotated)
+            # Save the frame as a JPEG for Unity to load via HTTP
+            cv2.imwrite("static/frame.jpg", annotated)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 self.stop()
 

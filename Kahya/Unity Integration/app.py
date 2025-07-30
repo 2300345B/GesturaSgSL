@@ -1,6 +1,8 @@
 # app.py
 
 from flask import Flask, jsonify
+from flask import send_from_directory
+import os
 from camera_stream import GestureDetector
 import threading
 
@@ -16,13 +18,11 @@ def start_detector():
 
 threading.Thread(target=start_detector, daemon=True).start()
 
-@app.route('/gesture', methods=['GET'])
-def get_gesture():
-    gesture, confidence = gesture_detector.get_gesture()
-    return jsonify({
-        'gesture': gesture,
-        'confidence': confidence
-    })
+@app.route('/frame', methods=['GET'])
+def get_frame():
+        return send_from_directory('static', 'frame.jpg')
+
+
 
 if __name__ == '__main__':
     print("🚀 Starting Flask server and camera stream...")
