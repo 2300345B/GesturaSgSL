@@ -74,9 +74,9 @@ public class SelectAvatarZH : MonoBehaviour
         Camera.main.transform.position = transform.GetComponentInChildren<Camera>().transform.position;
         Camera.main.transform.rotation = transform.GetComponentInChildren<Camera>().transform.rotation;
         animator = transform.GetComponent<Animator>();
-        GoScene goScene = FindObjectOfType<GoScene>();
-        goScene.animator = animator;
-        goScene.GetAllTriggers();
+        ModelAnim modelAnim = FindObjectOfType<ModelAnim>();
+        /*modelAnim.animator = animator;
+        modelAnim.GetAllTriggers();*/
         promptText.text = transform.gameObject.name + " is selected.";
         Outline[] outlines = FindObjectsOfType<Outline>();
         foreach (Outline outline in outlines) outline.enabled = false;
