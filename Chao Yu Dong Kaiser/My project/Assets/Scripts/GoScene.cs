@@ -14,18 +14,23 @@ public class GoScene : MonoBehaviour
     public GameObject allToggles;
     public GameObject allAvatars;
     public Toggle[] toggles;
+    public bool test;
     // Start is called before the first frame update
     void Start()
     {
-        SelectAvatarZH[] selectAvatars = FindObjectsOfType<SelectAvatarZH>();
-        toggles = allToggles.GetComponentsInChildren<Toggle>();
-        for (int i = 0; i < toggles.Length; i++)
+        if (test)
         {
-            if (toggles[i].isOn)
+            SelectAvatarZH[] selectAvatars = FindObjectsOfType<SelectAvatarZH>();
+            toggles = allToggles.GetComponentsInChildren<Toggle>();
+            for (int i = 0; i < toggles.Length; i++)
             {
-                selectAvatars[i].isSelected = true;
-                return;
+                if (toggles[i].isOn)
+                {
+                    selectAvatars[i].isSelected = true;
+                    return;
+                }
             }
+
         }
     }
 
