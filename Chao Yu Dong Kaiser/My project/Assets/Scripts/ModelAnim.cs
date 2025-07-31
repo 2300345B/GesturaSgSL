@@ -37,6 +37,17 @@ public class ModelAnim : MonoBehaviour
         animator.SetTrigger("ILoveYou");
 
     }
+    public void PlayAnimation5()
+    {
+        animator.SetTrigger("Please");
+
+    }
+    public void PlayAnimation6()
+    {
+        animator.SetTrigger("ThankYou");
+
+    }
+    // =====================================
 
     public void PlayAnimationA()
     {
