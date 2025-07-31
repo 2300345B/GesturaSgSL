@@ -32,9 +32,35 @@ public class ModelAnim : MonoBehaviour
         animator.SetTrigger("Sorry");
 
     }
-     public void PlayAnimationB()
+
+    public void PlayAnimationA()
+    {
+        animator.SetTrigger("LetterA");
+
+    }
+    public void PlayAnimationB()
     {
         animator.SetTrigger("LetterB");
+
+    }
+    public void PlayAnimationC()
+    {
+        animator.SetTrigger("LetterC");
+
+    }
+    public void PlayAnimationD()
+    {
+        animator.SetTrigger("LetterD");
+
+    }
+    public void PlayAnimationE()
+    {
+        animator.SetTrigger("LetterE");
+
+    }
+    public void PlayAnimationF()
+    {
+        animator.SetTrigger("LetterF");
 
     }
     public void PlayAnimationG()
