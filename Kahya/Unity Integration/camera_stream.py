@@ -1,5 +1,3 @@
-# camera_stream.py
-
 import torch
 import cv2
 import threading
@@ -7,12 +5,10 @@ import mediapipe as mp
 
 
 class GestureDetector:
-    def _init_(self, model_path, camera_index=0):
-        # Load your YOLOv5 model
+    def __init__(self, model_path, camera_index=0):
         self.model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, force_reload=True)
         self.model.eval()
 
-        # MediaPipe for hand detection
         self.mp_hands = mp.solutions.hands
         self.hands = self.mp_hands.Hands(
             static_image_mode=False,
@@ -37,16 +33,13 @@ class GestureDetector:
             if not ret:
                 continue
 
-            # Flip and convert to RGB
             frame = cv2.flip(frame, 1)
             rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             results = self.hands.process(rgb)
 
-            # Hand check (using MediaPipe)
             hand_detected = bool(results.multi_hand_landmarks)
 
             if hand_detected:
-                # Run your custom YOLOv5 model
                 yolo_results = self.model(frame)
                 df = yolo_results.pandas().xyxy[0]
 
@@ -58,20 +51,15 @@ class GestureDetector:
                     self.current_gesture = 'Hand Detected - No Match'
                     self.current_confidence = 0.0
 
-                # Optional: draw landmarks
                 for landmarks in results.multi_hand_landmarks:
-                    self.mp_draw.draw_landmarks(
-                        frame, landmarks, self.mp_hands.HAND_CONNECTIONS
-                    )
+                    self.mp_draw.draw_landmarks(frame, landmarks, self.mp_hands.HAND_CONNECTIONS)
 
-                # Optional: draw YOLO box
                 annotated = yolo_results.render()[0]
             else:
                 self.current_gesture = 'No Hand Detected'
                 self.current_confidence = 0.0
                 annotated = frame
 
-            # Display the annotated frame
             cv2.imshow("Gesture Detection", annotated)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 self.stop()

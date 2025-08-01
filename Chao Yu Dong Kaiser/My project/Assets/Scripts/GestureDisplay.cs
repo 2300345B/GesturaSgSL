@@ -28,13 +28,14 @@ public class GestureDisplay : MonoBehaviour
 
     IEnumerator SendStartRequest()
     {
-        UnityWebRequest request = UnityWebRequest.Post($"{serverUrl}/start", "");
+        WWWForm form = new WWWForm();
+        UnityWebRequest request = UnityWebRequest.Post($"{serverUrl}/start", form);
         yield return request.SendWebRequest();
 
         if (request.result != UnityWebRequest.Result.Success)
         {
             gestureText.text = "⚠️ Failed to start gesture detector.";
-            Debug.LogError("Failed to start detector: " + request.error);
+            Debug.LogError("❌ POST /start failed: " + request.error);
         }
         else
         {
@@ -51,15 +52,16 @@ public class GestureDisplay : MonoBehaviour
 
             if (request.result == UnityWebRequest.Result.Success)
             {
-                var response = JsonUtility.FromJson<GestureResponse>(request.downloadHandler.text);
-                gestureText.text = $"✅ Great! I can recognize it is: <b>{response.gesture}</b>\nConfidence: {response.confidence:F2}";
+                GestureResponse response = JsonUtility.FromJson<GestureResponse>(request.downloadHandler.text);
+                gestureText.text = $"✅ Recognized: <b>{response.gesture}</b>\nConfidence: {response.confidence:F2}";
             }
             else
             {
                 gestureText.text = "❌ Error: Cannot connect to Flask server.";
+                Debug.LogError("❌ GET /gesture failed: " + request.error);
             }
 
-            yield return new WaitForSeconds(1f); // Poll every second
+            yield return new WaitForSeconds(1f);
         }
     }
 

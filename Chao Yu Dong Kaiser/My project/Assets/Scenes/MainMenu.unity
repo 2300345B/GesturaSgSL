@@ -4054,7 +4054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &279608541
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11411,6 +11411,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  triggerNames: []
+  triggerValues: []
+  allToggles: {fileID: 0}
+  allAvatars: {fileID: 0}
+  toggles: []
+  test: 0
 --- !u!1 &983448380
 GameObject:
   m_ObjectHideFlags: 0
@@ -14968,6 +14974,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  triggerNames: []
+  triggerValues: []
+  allToggles: {fileID: 0}
+  allAvatars: {fileID: 0}
+  toggles: []
+  test: 0
 --- !u!1 &1367834734
 GameObject:
   m_ObjectHideFlags: 0
@@ -16392,7 +16404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1507775860
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16604,6 +16616,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  triggerNames: []
+  triggerValues: []
+  allToggles: {fileID: 0}
+  allAvatars: {fileID: 0}
+  toggles: []
+  test: 0
 --- !u!1 &1519604576
 GameObject:
   m_ObjectHideFlags: 0
@@ -20372,7 +20390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gestureText: {fileID: 1669972952}
-  startButton: {fileID: 164159571}
+  aiButton: {fileID: 690521894}
 --- !u!1 &1883538077
 GameObject:
   m_ObjectHideFlags: 0
@@ -22089,6 +22107,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  triggerNames: []
+  triggerValues: []
+  allToggles: {fileID: 0}
+  allAvatars: {fileID: 0}
+  toggles: []
+  test: 0
 --- !u!1 &2029945511
 GameObject:
   m_ObjectHideFlags: 0
@@ -22372,6 +22396,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  triggerNames: []
+  triggerValues: []
+  allToggles: {fileID: 0}
+  allAvatars: {fileID: 0}
+  toggles: []
+  test: 0
 --- !u!114 &2059869344
 MonoBehaviour:
   m_ObjectHideFlags: 0
