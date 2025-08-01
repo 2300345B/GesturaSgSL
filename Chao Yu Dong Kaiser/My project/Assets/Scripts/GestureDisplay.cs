@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -6,36 +6,45 @@ using UnityEngine.UI;
 public class GestureDisplay : MonoBehaviour
 {
     public Text gestureText;
-    public Button startButton;
-    public GameObject gestureManager;  // Drag the GestureManager GameObject here
-    public GameObject cameraManager;  // Drag the CameraManager GameObject here
-
-
+    public Button aiButton;
 
     private string serverUrl = "http://127.0.0.1:5000";
-    private bool detectionStarted = false;
+    private bool isDetecting = false;
 
     void Start()
     {
-        startButton.onClick.AddListener(OnButtonClick);
+        aiButton.onClick.AddListener(StartGestureDetection);
     }
 
-    public void OnButtonClick()
-{
-    if (!detectionStarted)
+    void StartGestureDetection()
     {
-        detectionStarted = true;
-
-        if (gestureManager != null)
-            gestureManager.SetActive(true);  // Show GestureManager (and its children)
-
-        StartCoroutine(UpdateGesture());
+        if (!isDetecting)
+        {
+            isDetecting = true;
+            StartCoroutine(SendStartRequest());
+            StartCoroutine(UpdateGesture());
+        }
     }
-}
+
+    IEnumerator SendStartRequest()
+    {
+        UnityWebRequest request = UnityWebRequest.Post($"{serverUrl}/start", "");
+        yield return request.SendWebRequest();
+
+        if (request.result != UnityWebRequest.Result.Success)
+        {
+            gestureText.text = "⚠️ Failed to start gesture detector.";
+            Debug.LogError("Failed to start detector: " + request.error);
+        }
+        else
+        {
+            gestureText.text = "🟢 Camera started. Waiting for gesture...";
+        }
+    }
 
     IEnumerator UpdateGesture()
     {
-        while (true)
+        while (isDetecting)
         {
             UnityWebRequest request = UnityWebRequest.Get($"{serverUrl}/gesture");
             yield return request.SendWebRequest();
@@ -43,14 +52,14 @@ public class GestureDisplay : MonoBehaviour
             if (request.result == UnityWebRequest.Result.Success)
             {
                 var response = JsonUtility.FromJson<GestureResponse>(request.downloadHandler.text);
-                gestureText.text = $"Great! I can recognize it is {response.gesture}\nConfidence: {response.confidence}";
+                gestureText.text = $"✅ Great! I can recognize it is: <b>{response.gesture}</b>\nConfidence: {response.confidence:F2}";
             }
             else
             {
-                gestureText.text = "Error: Cannot connect to Flask server";
+                gestureText.text = "❌ Error: Cannot connect to Flask server.";
             }
 
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1f); // Poll every second
         }
     }
 

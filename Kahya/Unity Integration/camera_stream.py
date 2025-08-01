@@ -1,14 +1,13 @@
 # camera_stream.py
-import os
+
 import torch
 import cv2
 import threading
 import mediapipe as mp
 
 
-
 class GestureDetector:
-    def __init__(self, model_path, camera_index=0):
+    def _init_(self, model_path, camera_index=0):
         # Load your YOLOv5 model
         self.model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, force_reload=True)
         self.model.eval()
@@ -73,8 +72,7 @@ class GestureDetector:
                 annotated = frame
 
             # Display the annotated frame
-            # Save the frame as a JPEG for Unity to load via HTTP
-            cv2.imwrite("static/frame.jpg", annotated)
+            cv2.imshow("Gesture Detection", annotated)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 self.stop()
 
