@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+//using TMPro;
 
 
 public class SelectAvatarZH : MonoBehaviour
