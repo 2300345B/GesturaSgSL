@@ -6,9 +6,11 @@ import mediapipe as mp
 
 class GestureDetector:
     def __init__(self, model_path, camera_index=0):
+        # Load YOLOv5 model
         self.model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, force_reload=True)
         self.model.eval()
 
+        # Setup MediaPipe hands
         self.mp_hands = mp.solutions.hands
         self.hands = self.mp_hands.Hands(
             static_image_mode=False,
@@ -16,12 +18,13 @@ class GestureDetector:
             min_detection_confidence=0.5,
             min_tracking_confidence=0.5
         )
-        self.mp_draw = mp.solutions.drawing_utils
 
+        # Open webcam
         self.cap = cv2.VideoCapture(camera_index)
         if not self.cap.isOpened():
             raise Exception(f"❌ Cannot open webcam at index {camera_index}.")
 
+        # Shared state variables
         self.current_gesture = 'None'
         self.current_confidence = 0.0
         self._running = False
@@ -33,13 +36,12 @@ class GestureDetector:
             if not ret:
                 continue
 
-            frame = cv2.flip(frame, 1)
+            frame = cv2.flip(frame, 1)  # Mirror the frame for natural interaction
             rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             results = self.hands.process(rgb)
 
-            hand_detected = bool(results.multi_hand_landmarks)
-
-            if hand_detected:
+            if results.multi_hand_landmarks:
+                # Run YOLO model on the frame
                 yolo_results = self.model(frame)
                 df = yolo_results.pandas().xyxy[0]
 
@@ -50,22 +52,12 @@ class GestureDetector:
                 else:
                     self.current_gesture = 'Hand Detected - No Match'
                     self.current_confidence = 0.0
-
-                for landmarks in results.multi_hand_landmarks:
-                    self.mp_draw.draw_landmarks(frame, landmarks, self.mp_hands.HAND_CONNECTIONS)
-
-                annotated = yolo_results.render()[0]
             else:
                 self.current_gesture = 'No Hand Detected'
                 self.current_confidence = 0.0
-                annotated = frame
 
-            cv2.imshow("Gesture Detection", annotated)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                self.stop()
-
+        # Clean up when stopping
         self.cap.release()
-        cv2.destroyAllWindows()
 
     def start(self):
         if not self._running:

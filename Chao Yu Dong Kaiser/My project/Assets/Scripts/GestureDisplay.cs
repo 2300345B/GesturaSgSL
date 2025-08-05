@@ -45,25 +45,34 @@ public class GestureDisplay : MonoBehaviour
 
     IEnumerator UpdateGesture()
     {
-        while (isDetecting)
-        {
-            UnityWebRequest request = UnityWebRequest.Get($"{serverUrl}/gesture");
-            yield return request.SendWebRequest();
+    while (isDetecting)
+    {
+        UnityWebRequest request = UnityWebRequest.Get($"{serverUrl}/gesture");
+        yield return request.SendWebRequest();
 
-            if (request.result == UnityWebRequest.Result.Success)
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            GestureResponse response = JsonUtility.FromJson<GestureResponse>(request.downloadHandler.text);
+
+            if (response.confidence >= 0.6f)
             {
-                GestureResponse response = JsonUtility.FromJson<GestureResponse>(request.downloadHandler.text);
-                gestureText.text = $"✅ Recognized: <b>{response.gesture}</b>\nConfidence: {response.confidence:F2}";
+                gestureText.text = $"✅ Recognized: <b>{response.gesture}</b>\nConfidence: {response.confidence:F2}\n👏 Great job! I can detect you signing <b>{response.gesture}</b>.";
             }
             else
             {
-                gestureText.text = "❌ Error: Cannot connect to Flask server.";
-                Debug.LogError("❌ GET /gesture failed: " + request.error);
+                gestureText.text = $"✅ Recognized: <b>{response.gesture}</b>\nConfidence: {response.confidence:F2}";
             }
-
-            yield return new WaitForSeconds(1f);
         }
+        else
+        {
+            gestureText.text = "❌ Error: Cannot connect to Flask server.";
+            Debug.LogError("❌ GET /gesture failed: " + request.error);
+        }
+
+        yield return new WaitForSeconds(1f);
     }
+    }
+
 
     [System.Serializable]
     public class GestureResponse
