@@ -6,32 +6,43 @@ using System.Collections;
 public class CameraStreamDisplay : MonoBehaviour
 {
     public RawImage displayImage;
-    public string frameUrl = "http://127.0.0.1:5000/frame.jpg"; // ← TEMPORARY endpoint for single frame
+    public string frameUrl = "http://127.0.0.1:5000/frame.jpg";
 
-    void Start()
+    private Coroutine fetchRoutine;
+
+    // Called when GameObject is enabled (e.g. panel opens)
+    void OnEnable()
     {
-        StartCoroutine(FetchFrameLoop());
+        fetchRoutine = StartCoroutine(FetchFrameLoop());
+    }
+
+    // Called when GameObject is disabled (e.g. panel closed)
+    void OnDisable()
+    {
+        if (fetchRoutine != null)
+        {
+            StopCoroutine(fetchRoutine);
+        }
     }
 
     IEnumerator FetchFrameLoop()
     {
-    while (true)
-       {
-        UnityWebRequest request = UnityWebRequestTexture.GetTexture(frameUrl);
-        yield return request.SendWebRequest();
-
-        if (request.result == UnityWebRequest.Result.Success)
+        while (true)
         {
-            Texture tex = ((DownloadHandlerTexture)request.downloadHandler).texture;
-            displayImage.texture = tex;
-        }
-        else
-        {
-            Debug.LogWarning("⚠️ Failed to fetch frame: " + request.error);
-        }
+            UnityWebRequest request = UnityWebRequestTexture.GetTexture(frameUrl);
+            yield return request.SendWebRequest();
 
-        yield return new WaitForSeconds(0.016f);
-       }
+            if (request.result == UnityWebRequest.Result.Success)
+            {
+                Texture tex = ((DownloadHandlerTexture)request.downloadHandler).texture;
+                displayImage.texture = tex;
+            }
+            else
+            {
+                Debug.LogWarning("⚠️ Failed to fetch frame: " + request.error);
+            }
+
+            yield return new WaitForSeconds(0.016f); 
+        }
     }
-
 }
