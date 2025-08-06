@@ -4,7 +4,7 @@ import cv2
 
 app = Flask(__name__)
 
-# Path to your trained YOLOv5 model
+# Load your YOLOv5 model
 MODEL_PATH = r'C:\Users\Admin\Documents\GitHub\GesturaSgSL\Kahya\sgsl_yolo\AI Models\sgsl_model_v3\weights\best.pt'
 gesture_detector = GestureDetector(model_path=MODEL_PATH)
 
@@ -21,24 +21,20 @@ def get_gesture():
         'confidence': confidence
     })
 
-@app.route('/video_feed')
-def video_feed():
-    def generate_frames():
-        while True:
-            if not gesture_detector.cap.isOpened():
-                continue
-            ret, frame = gesture_detector.cap.read()
-            if not ret:
-                continue
-            frame = cv2.flip(frame, 1)
-            _, buffer = cv2.imencode('.jpg', frame)
-            frame_bytes = buffer.tobytes()
-            yield (b'--frame\r\n'
-                   b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
+# ✅ This endpoint returns one clean frame for Unity's RawImage
+@app.route('/frame.jpg')
+def single_frame():
+    if not gesture_detector.cap.isOpened():
+        return "Camera not available", 500
 
-    return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+    ret, frame = gesture_detector.cap.read()
+    if not ret:
+        return "Frame read failed", 500
+
+    frame = cv2.flip(frame, 1)  # Mirror for natural view
+    _, buffer = cv2.imencode('.jpg', frame)
+    return Response(buffer.tobytes(), mimetype='image/jpeg')
 
 if __name__ == '__main__':
-    print("🚀 Starting Flask server and clean video stream...")
+    print("🚀 Starting Flask server...")
     app.run(host='0.0.0.0', port=5000)
-        

@@ -1,32 +1,36 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.Networking;
 using UnityEngine.UI;
+using UnityEngine.Networking;
+using System.Collections;
 
 public class CameraStreamDisplay : MonoBehaviour
 {
     public RawImage displayImage;
-    public string streamUrl = "http://127.0.0.1:5000/video_feed";
+    public string frameUrl = "http://127.0.0.1:5000/frame.jpg"; // ← TEMPORARY endpoint for single frame
 
     void Start()
     {
-        StartCoroutine(LoadStream());
+        StartCoroutine(FetchFrameLoop());
     }
 
-    IEnumerator LoadStream()
+    IEnumerator FetchFrameLoop()
     {
         while (true)
         {
-            UnityWebRequest req = UnityWebRequestTexture.GetTexture(streamUrl);
-            yield return req.SendWebRequest();
+            UnityWebRequest request = UnityWebRequestTexture.GetTexture(frameUrl);
+            yield return request.SendWebRequest();
 
-            if (req.result == UnityWebRequest.Result.Success)
+            if (request.result == UnityWebRequest.Result.Success)
             {
-                Texture2D tex = ((DownloadHandlerTexture)req.downloadHandler).texture;
+                Texture tex = ((DownloadHandlerTexture)request.downloadHandler).texture;
                 displayImage.texture = tex;
             }
+            else
+            {
+                Debug.LogWarning("⚠️ Failed to fetch frame: " + request.error);
+            }
 
-            yield return new WaitForSeconds(0.1f); // Avoid spamming server
+            yield return new WaitForSeconds(0.1f); // 10 FPS
         }
     }
 }
