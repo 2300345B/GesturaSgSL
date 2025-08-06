@@ -18285,8 +18285,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -560, y: 290}
-  m_SizeDelta: {x: 800, y: 500}
+  m_AnchoredPosition: {x: -446.23108, y: 192.849}
+  m_SizeDelta: {x: 1027.5378, y: 694.302}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1669972951
 CanvasRenderer:
@@ -18309,7 +18309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.95294124, g: 0.95294124, b: 0.95294124, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18326,7 +18326,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Waiting to detect gestures....
@@ -20060,7 +20060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayImage: {fileID: 54690047}
-  streamUrl: http://127.0.0.1:5000/video_feed
+  frameUrl: http://127.0.0.1:5000/frame.jpg
 --- !u!1 &1837720052
 GameObject:
   m_ObjectHideFlags: 0
@@ -23196,7 +23196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0.07450981}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

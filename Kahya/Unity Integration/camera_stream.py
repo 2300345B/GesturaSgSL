@@ -23,6 +23,10 @@ class GestureDetector:
         self.cap = cv2.VideoCapture(camera_index)
         if not self.cap.isOpened():
             raise Exception(f"❌ Cannot open webcam at index {camera_index}.")
+        
+        self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+        self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+
 
         # Shared state variables
         self.current_gesture = 'None'

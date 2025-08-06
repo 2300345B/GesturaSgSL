@@ -15,22 +15,23 @@ public class CameraStreamDisplay : MonoBehaviour
 
     IEnumerator FetchFrameLoop()
     {
-        while (true)
+    while (true)
+       {
+        UnityWebRequest request = UnityWebRequestTexture.GetTexture(frameUrl);
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
         {
-            UnityWebRequest request = UnityWebRequestTexture.GetTexture(frameUrl);
-            yield return request.SendWebRequest();
-
-            if (request.result == UnityWebRequest.Result.Success)
-            {
-                Texture tex = ((DownloadHandlerTexture)request.downloadHandler).texture;
-                displayImage.texture = tex;
-            }
-            else
-            {
-                Debug.LogWarning("⚠️ Failed to fetch frame: " + request.error);
-            }
-
-            yield return new WaitForSeconds(0.1f); // 10 FPS
+            Texture tex = ((DownloadHandlerTexture)request.downloadHandler).texture;
+            displayImage.texture = tex;
         }
+        else
+        {
+            Debug.LogWarning("⚠️ Failed to fetch frame: " + request.error);
+        }
+
+        yield return new WaitForSeconds(0.016f);
+       }
     }
+
 }
