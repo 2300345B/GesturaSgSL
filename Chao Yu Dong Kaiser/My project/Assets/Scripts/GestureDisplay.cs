@@ -7,12 +7,13 @@ public class GestureDisplay : MonoBehaviour
 {
     public Text gestureText;
     public Button aiButton;
+ 
 
     private string serverUrl = "http://127.0.0.1:5000";
     private bool isDetecting = false;
 
     // Gesture practice settings
-    public string[] gestureSequence = { "Yes", "No", "Me", "You" };
+    public string[] gestureSequence = { "i love you","Yes", "No", "Me", "You" };
     private int currentGestureIndex = 0;
     private float confidenceThreshold = 0.6f;
 

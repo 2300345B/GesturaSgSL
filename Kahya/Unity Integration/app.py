@@ -5,7 +5,7 @@ import cv2
 app = Flask(__name__)
 
 # Load your YOLOv5 model
-MODEL_PATH = r"C:\Users\Admin\Documents\GitHub\GesturaSgSL\Kahya\sgsl_yolo\AI Models\sgsl_model_v3\weights\best.pt" #change file name accordingly
+MODEL_PATH = r"C:\Users\kaise\Downloads\GesturaSgSL\Kahya\sgsl_yolo\AI Models\sgsl_model_v3\weights\best.pt" #change file name accordingly
 gesture_detector = GestureDetector(model_path=MODEL_PATH)
 
 @app.route('/start', methods=['POST'])

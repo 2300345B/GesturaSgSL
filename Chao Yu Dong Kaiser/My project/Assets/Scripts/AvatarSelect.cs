@@ -6,7 +6,6 @@ using Unity.VisualScripting;
 //using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 
 public class AvatarSelect : MonoBehaviour
