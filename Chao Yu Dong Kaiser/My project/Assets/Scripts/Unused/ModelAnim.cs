@@ -47,6 +47,16 @@ public class ModelAnim : MonoBehaviour
         animator.SetTrigger("ThankYou");
 
     }
+    public void PlayAnimation7()
+    {
+        animator.SetTrigger("Yes");
+
+    }
+    public void PlayAnimation8()
+    {
+        animator.SetTrigger("No");
+
+    }
     // =====================================
 
     public void PlayAnimationA()
