@@ -7,13 +7,12 @@ public class GestureDisplay : MonoBehaviour
 {
     public Text gestureText;
     public Button aiButton;
- 
 
     private string serverUrl = "http://127.0.0.1:5000";
     private bool isDetecting = false;
 
     // Gesture practice settings
-    public string[] gestureSequence = { "i love you","Yes", "No", "Me", "You" };
+    public string[] gestureSequence = { "I love you", "Yes", "No", "Me", "You" };
     private int currentGestureIndex = 0;
     private float confidenceThreshold = 0.6f;
 
@@ -46,7 +45,7 @@ public class GestureDisplay : MonoBehaviour
         }
         else
         {
-            gestureText.text = $"🟢 Show gesture: {gestureSequence[currentGestureIndex]}";
+            gestureText.text = $"👋 Let's begin! Show me: {gestureSequence[currentGestureIndex]}";
         }
     }
 
@@ -61,6 +60,7 @@ public class GestureDisplay : MonoBehaviour
             {
                 GestureResponse response = JsonUtility.FromJson<GestureResponse>(request.downloadHandler.text);
                 string targetGesture = gestureSequence[currentGestureIndex];
+                float accuracyPercent = Mathf.Round(response.confidence * 100f);
 
                 if (response.gesture.Equals(targetGesture, System.StringComparison.OrdinalIgnoreCase) &&
                     response.confidence >= confidenceThreshold)
@@ -70,24 +70,24 @@ public class GestureDisplay : MonoBehaviour
 
                     if (currentGestureIndex >= gestureSequence.Length)
                     {
-                        gestureText.text = "✅ All gestures completed! 🎉";
+                        gestureText.text = "🎉 Fantastic! You've mastered all the gestures!";
                         isDetecting = false;
                         yield break;
                     }
                     else
                     {
-                        gestureText.text = $"✅ Correct! I can detect '{response.gesture}'.\nNext: {gestureSequence[currentGestureIndex]}";
+                        gestureText.text = $"✅ Great job! You nailed '{response.gesture}' ({accuracyPercent}%).\nNext: {gestureSequence[currentGestureIndex]}";
                     }
                 }
                 else
                 {
-                    // Show prompt until correct
-                    gestureText.text = $"Show gesture: {targetGesture}\nDetected: {response.gesture} ({response.confidence:F2})";
+                    // Encouraging prompt
+                    gestureText.text = $"✨ Try showing: {targetGesture}\nI think I see '{response.gesture}' ({accuracyPercent}%)";
                 }
             }
             else
             {
-                gestureText.text = "❌ Error: Cannot connect to Flask server.";
+                gestureText.text = "❌ Error: Cannot connect to AI assistant.";
                 Debug.LogError("❌ GET /gesture failed: " + request.error);
             }
 
