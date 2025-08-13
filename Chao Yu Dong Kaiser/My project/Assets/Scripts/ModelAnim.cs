@@ -10,13 +10,13 @@ public class ModelAnim : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void PlayAnimation1()
     {
@@ -58,45 +58,8 @@ public class ModelAnim : MonoBehaviour
 
     }
     // =====================================
-
-    public void PlayAnimationA()
+    public void PlayAnimation(string letter)
     {
-        animator.SetTrigger("LetterA");
-
-    }
-    public void PlayAnimationB()
-    {
-        animator.SetTrigger("LetterB");
-
-    }
-    public void PlayAnimationC()
-    {
-        animator.SetTrigger("LetterC");
-
-    }
-    public void PlayAnimationD()
-    {
-        animator.SetTrigger("LetterD");
-
-    }
-    public void PlayAnimationE()
-    {
-        animator.SetTrigger("LetterE");
-
-    }
-    public void PlayAnimationF()
-    {
-        animator.SetTrigger("LetterF");
-
-    }
-    public void PlayAnimationG()
-    {
-        animator.SetTrigger("LetterG");
-
-    }
-    public void PlayAnimationH()
-    {
-        animator.SetTrigger("LetterH");
-
+        animator.SetTrigger("Letter" + letter.ToUpper());
     }
 }
