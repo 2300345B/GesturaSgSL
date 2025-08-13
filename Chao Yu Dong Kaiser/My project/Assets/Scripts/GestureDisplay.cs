@@ -12,7 +12,7 @@ public class GestureDisplay : MonoBehaviour
     private bool isDetecting = false;
 
     // Gesture practice settings
-    public string[] gestureSequence = { "I love you", "Yes", "No", "Me", "You" };
+    public string[] gestureSequence = { "I love you", "Yes", "No", "Welcome","Thank You","Ok","Hello","Hi" };
     private int currentGestureIndex = 0;
     private float confidenceThreshold = 0.6f;
 
